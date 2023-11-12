@@ -37,15 +37,14 @@ def main():
     print(names[:-1:2])
 
     # 10. [‘Linda’, ‘Kurt’, ‘Jackie’]
-    print(names[9:11:-1])
+    print(names[11:8:-1])
 
     # 11. ['Linda', 'Kurt', 'Jackie', 'Imogen', 'Harold', 'George', 'Francis', 'Emma', 'Doug', 'Chad', 'Brenda', 'Abigail']
-
-
+    print(names[::-1])
 
     # 12. ['Linda', 'Kurt', 'Jackie', 'Imogen', 'Harold', 'George', 'Francis', 'Emma', 'Doug', 'Chad', 'Brenda', 'Abigail']
     # (in a different way than 11. See hint for 9 for help.)
-
+    print(names[11::-1])
 
 
 
