@@ -6,7 +6,10 @@ def create_list(starting, ending):
     :param ending: A number greater than the starting number
     :return: list of numbers starting with the first number and going up to and including the second number
     """
-    pass # remove this line when starting your function
+    created_list = []
+    for x in range(starting,ending+1):
+        created_list.append(x)
+    return created_list
 
 
 def find_odds(numbers):
@@ -28,3 +31,10 @@ def remove_duplicates(numbers):
     """
 
     pass # remove this line when starting your function
+
+
+def main():
+    print(create_list(8, 20))
+
+
+main()
