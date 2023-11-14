@@ -18,8 +18,11 @@ def find_odds(numbers):
     :param numbers: a list of numbers
     :return: a new list consisting of only the odd numbers from the original list
     """
-
-    pass # remove this line when starting your function
+    odds_list = []
+    for number in numbers:
+        if (number % 2) != 0:
+            odds_list.append(number)
+    return odds_list
 
 
 def remove_duplicates(numbers):
@@ -35,6 +38,5 @@ def remove_duplicates(numbers):
 
 def main():
     print(create_list(8, 20))
-
-
+    print(find_odds([13, 2, 9, 14, 16, 18, 9, 11, 21]))
 main()
