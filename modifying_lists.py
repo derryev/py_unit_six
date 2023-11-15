@@ -25,18 +25,24 @@ def find_odds(numbers):
     return odds_list
 
 
-def remove_duplicates(numbers):
+def remove_duplicates(list):
     """
     Ex. remove_duplicates([1, 2, 3, 3, 4, 5, 6, 6, 7, 7, 7])  would return  [1, 2, 3, 4, 5, 6, 7]
     remove_duplicates9[‘apple’, ‘banana’, ‘banana’, ‘cherry’]) would return [‘apple’, ‘banana’, ‘cherry’]
-    :param numbers:
-    :return:
+    :param list: a list of either numbers or words
+    :return: a list that is the same as the list given in the parameter, but without any duplicates
     """
-
-    pass # remove this line when starting your function
+    no_duplicate_list = []
+    for item in list:
+        if item not in no_duplicate_list:
+            no_duplicate_list.append(item)
+    return no_duplicate_list
 
 
 def main():
     print(create_list(8, 20))
     print(find_odds([13, 2, 9, 14, 16, 18, 9, 11, 21]))
+    numbers_list = [1, 2, 3, 3, 4, 5, 6, 6, 7, 7, 7]
+    words_list = ["apple", "banana", "banana", "cherry"]
+    print(remove_duplicates(words_list))
 main()
