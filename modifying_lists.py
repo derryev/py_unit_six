@@ -7,7 +7,7 @@ def create_list(starting, ending):
     :return: list of numbers starting with the first number and going up to and including the second number
     """
     created_list = []
-    for x in range(starting,ending+1):
+    for x in range(starting, ending+1):
         created_list.append(x)
     return created_list
 
