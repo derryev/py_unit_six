@@ -38,7 +38,7 @@ def main():
     print(duplicate_counter)
     if int(times_run_sim) == 1:
         print("Out of " + times_run_sim + " simulated class, " + str(duplicate_counter) + " had duplicate birthdays.")
-    elif times_run_sim != 1:
+    elif int(times_run_sim) != 1:
         print("Out of " + times_run_sim + " simulated classes, " + str(duplicate_counter) + " had duplicate birthdays.")
     proportion_duplicate_lists = (duplicate_counter / int(times_run_sim))*100
     print("This means there were duplicate birthdays about "+str(round(proportion_duplicate_lists, 4)) +
