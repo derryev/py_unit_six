@@ -1,3 +1,8 @@
+# Eva D.
+# 11/30/2023
+# Simulates the birthday paradox with as many classes as the user desires, demonstrating the unexpected frequency of
+# duplicate birthdays in a class of only 23 random people
+
 
 import random
 
@@ -48,6 +53,7 @@ def is_duplicate(birthday_list):
 
 
 def main():
+    print("Welcome to the Birthday Paradox simulator!")
     times_run_sim = get_input_how_many()
     duplicate_counter = 0
     for x in range(int(times_run_sim)):                                                                                 # this for loops repeats the list generation and duplicate determination as many times as the user wanted to run the simulation
