@@ -45,9 +45,9 @@ def is_duplicate(birthday_list):
     going through the entire list, which will allow the program to count how many lists with duplicate birthdays were
     discovered.
     """
-    for birthday in birthday_list:
-        for x in birthday_list[birthday+1:24]:
-            if birthday == x:
+    for x in range(23):
+        for i in range(x+1, 23):
+            if birthday_list[x] == birthday_list[i]:
                 return True
     return False
 
